@@ -17,7 +17,7 @@ export default defineConfig({
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024, // 5MB limit
         cleanupOutdatedCaches: true,
       },
-      includeAssets: ["favicon.ico", "apple-touch-icon.png", "masked-icon.svg"],
+      includeAssets: ["favicon.ico"],
       manifest: {
         name: "Vihiga LIMS eDAMS Admin Portal",
         short_name: "Vihiga LIMS Admin",
@@ -26,19 +26,9 @@ export default defineConfig({
         theme_color: "#ffffff",
         icons: [
           {
-            src: "favicon-16x16.png",
-            sizes: "16x16",
-            type: "image/png",
-          },
-          {
-            src: "favicon-32x32.png",
-            sizes: "32x32",
-            type: "image/png",
-          },
-          {
-            src: "apple-touch-icon.png",
-            sizes: "180x180",
-            type: "image/png",
+            src: "favicon.ico",
+            sizes: "any",
+            type: "image/x-icon",
           },
         ],
       },
