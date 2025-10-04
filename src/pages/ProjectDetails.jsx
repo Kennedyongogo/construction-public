@@ -602,13 +602,13 @@ export default function ProjectDetails() {
                                             }}
                                             onClick={() =>
                                               window.open(
-                                                `/api${imageUrl}`,
+                                                `${window.location.origin}${imageUrl}`,
                                                 "_blank"
                                               )
                                             }
                                           >
                                             <img
-                                              src={`/api${imageUrl}`}
+                                              src={`${window.location.origin}${imageUrl}`}
                                               alt={`Progress image ${imageIndex + 1}`}
                                               style={{
                                                 width: "100%",
